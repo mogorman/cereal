@@ -62,8 +62,8 @@ services = {
   "managerState": (True, 2., 1),
   "uploaderState": (True, 0., 1),
 
-  # debug
-  "testJoystick": (False, 0.),
+  "jvePilotState": (False, 0.),
+  "jvePilotUIState": (False, 0.)
 }
 service_list = {name: Service(new_port(idx), *vals) for  # type: ignore
                 idx, (name, vals) in enumerate(services.items())}
